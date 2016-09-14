@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+
+/**  Basic Page CSS **/
+body{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+}
+
+/**  Header Navigation **/
+
+header .navbar {
+  padding: 30px 0;
+  transition: all .5s ease-out;
+}
+
+header .navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: black;
+  padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #FEDC32;
+}
+
+header .navbar-default .navbar-nav .active a {
+  color: #FEDC32;
+  background: transparent;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #FEDC32;
+  background: transparent;
+  text-shadow: none;
+}
+
+/**  Navbar Brand **/
+
+header .navbar-brand {
+  /*background: url(../images/wisdompetlogo.svg);*/
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  height: auto;
+}
+
+header .navbar-brand h1 {
+  font-family: "Josefin+Slab", sans-serif;
+  color: black;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 800;
+  padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 100;
+}
+
+/**  Navbar Toggle **/
+header .navbar-toggle {
+  background-color: #FEDC32;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  color: #FEDC32;
+}
+
+/**  nav inbody **/
+
+header .inbody {
+  background: white;
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators li {
+  background-color: #FEDC32;
+}
+
+.carousel-indicators .active {
+  background-color: #000000;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/**  Page **/
+.page {
+  padding: 50px 0;
+}
+
+.page h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/**  Page -- about **/
+#about {
+  background-color: #fdd652;
+}
+
+/**  Page -- Services **/
+
+.about {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.about h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/**  Page -- connect **/
+
+#connect {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+/**  Page -- work **/
+
+#work {
+  padding: 0;
+}
+
+#work h2 {
+  display: none;
+}
+#resume{
+padding: 0px;
+
+}
+
+
+#name{
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 30px;
+  outline: none;
+  border: 1px;
+  font-size:14px;
+  background-color: #D3D3D3;
+  text-align:center;
+}
+
+#email{
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 30px;
+  outline: none;
+  border: 1px;
+  font-size:14px;
+  background-color: #D3D3D3;
+  text-align:center;
+}
+
+#Message{
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+  outline: none;
+  border: 1px;
+  font-size:14px;
+  background-color: #D3D3D3;
+  text-align:center;
+}
+
+
+#button-yellow {
+  cursor: pointer;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  outline: none;
+  border: 0;
+  background: #fdd652;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  border-radius: 3px;
+}
+
+
+/*icon*/
+.linkedin {
+  margin: 10px;
+  color: gray;
+  float: left;
+}
+
+.twitter {
+  margin: 10px;
+  color: gray;
+  float: left;
+}
+
+.github {
+  margin: 10px;
+  color: gray;
+  float: left;
+}
+
+a {
+  color: black !important;
+}
+
+a:hover {
+  color: gray !important;
+  border:none;
+  text-decoration: none;
+}
+/**  Footer **/
+
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: black;
+  font-size: 1em;
+  padding: 20px 0 20px 0;
+}
+
+footer a {
+  font-weight: 700;
+  color: black;
+}
+
+footer a:hover {
+  color: black !important;
+}
+
+footer .navbar-nav>li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: #FEDC32 !important;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .1);
+  }
+}
+
+@media only screen
+and (min-width: 450px)
+and (max-width: 768px) {
+  .service p {
+    padding: 0 20%;
+  }
+}
